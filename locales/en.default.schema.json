@@ -361,6 +361,9 @@
         "background_2": {
           "label": "Background 2"
         },
+        "background_3": {
+          "label": "Background 3"
+        },
         "inverse": {
           "label": "Inverse"
         },
