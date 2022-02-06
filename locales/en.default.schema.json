@@ -55,6 +55,9 @@
             "label": "Background 2"
           },
           "options__5": {
+            "label": "Background 3"
+          },
+          "options__6": {
             "label": "Inverse"
           },
           "label": "Color scheme"
