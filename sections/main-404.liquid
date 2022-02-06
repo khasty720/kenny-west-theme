@@ -3,20 +3,28 @@
     margin-top: 1rem;
   }
 
+  .template-404 .subtext {
+    margin-bottom: 2rem;
+  }
+
   @media screen and (min-width: 750px) {
     .template-404 .title + * {
       margin-top: 2rem;
+    }
+
+    .template-404 .subtext {
+      margin-bottom: 3rem;
     }
   }
 </style>
 
 <div class="template-404 page-width page-margin center">
-  <p>
-    {{ 'templates.404.subtext' | t }}
-  </p>
   <h1 class="title">
-    {{ 'templates.404.title' | t }}
+    404. Well, that’s not right.
   </h1>
+  <h3 class="subtext">
+    We’re sorry we don’t have what you’re looking for. Try again, or start browsing some of our products.
+  </h3>
   <a href="{{ routes.all_products_collection_url }}" class="button">
     {{ 'general.continue_shopping' | t }}
   </a>
