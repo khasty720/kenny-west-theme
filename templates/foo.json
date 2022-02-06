@@ -1,0 +1,11 @@
+{
+    "name": "Foo",
+    "sections": {
+      "main": {
+        "type": "foo"
+    }
+    },
+    "order": [
+      "main"
+    ]
+  }
