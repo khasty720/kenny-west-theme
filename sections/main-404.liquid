@@ -3,8 +3,8 @@
     margin-top: 1rem;
   }
 
-  .template-404 .subtext {
-    margin-bottom: 2rem;
+  .template-404 .continue-shopping {
+    margin-top: 1rem;
   }
 
   @media screen and (min-width: 750px) {
@@ -12,22 +12,24 @@
       margin-top: 2rem;
     }
 
-    .template-404 .subtext {
-      margin-bottom: 3rem;
+    .template-404 .continue-shopping {
+      margin-top: 2rem;
     }
   }
 </style>
 
 <div class="template-404 page-width page-margin center">
   <h1 class="title">
-    404. Well, that’s not right.
+    {{ section.settings.title }}
   </h1>
   <h3 class="subtext">
-    We’re sorry we don’t have what you’re looking for. Try again, or start browsing some of our products.
+    {{ section.settings.subtext }}
   </h3>
-  <a href="{{ routes.all_products_collection_url }}" class="button">
-    {{ 'general.continue_shopping' | t }}
-  </a>
+  {% if section.settings.show_continue_shopping %}
+    <a href="{{ routes.all_products_collection_url }}" class="button continue-shopping">
+      {{ section.settings.continue_shopping_label }}
+    </a>
+  {% endif %}
 </div>
 
 {% schema %}
@@ -35,16 +37,28 @@
   "name": "404 Error",
   "settings": [
     {
-      "id": "404_title",
+      "id": "title",
       "type": "text",
       "label": "Title",
       "default": "404. Well, that’s not right."
     },
     {
-      "id": "404_subtext",
+      "id": "subtext",
       "type": "text",
       "label": "Subtext",
       "default": "We’re sorry we don’t have what you’re looking for. Try again, or start browsing some of our products."
+    },
+    {
+      "id": "continue_shopping_label",
+      "type": "text",
+      "label": "Continue Shopping Label",
+      "default": "Continue Shopping"
+    },
+    {
+      "id": "show_continue_shopping",
+      "type": "checkbox",
+      "label": "Show Continue Shopping",
+      "default": true
     }
   ],
   "presets": [
