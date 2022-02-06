@@ -29,3 +29,29 @@
     {{ 'general.continue_shopping' | t }}
   </a>
 </div>
+
+{% schema %}
+{
+  "name": "404 Error",
+  "settings": [
+    {
+      "id": "404_title",
+      "type": "text",
+      "label": "Title",
+      "default": "404. Well, that’s not right."
+    },
+    {
+      "id": "404_subtext",
+      "type": "text",
+      "label": "Subtext",
+      "default": "We’re sorry we don’t have what you’re looking for. Try again, or start browsing some of our products."
+    }
+  ],
+  "presets": [
+    {
+      "name": "404 Error",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
