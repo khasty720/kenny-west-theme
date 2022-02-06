@@ -388,6 +388,9 @@
               "options__2": {
                 "label": "Background 2"
               },
+              "background_3": {
+                "label": "Background 3"
+              },
               "options__3": {
                 "label": "Inverse"
               },
