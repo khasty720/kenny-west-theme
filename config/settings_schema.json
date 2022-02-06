@@ -1,9 +1,9 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Dawn",
-    "theme_version": "2.5.0",
-    "theme_author": "Shopify",
+    "theme_name": "kenny-west",
+    "theme_version": "1.0.0",
+    "theme_author": "Kyle Hasty",
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn",
     "theme_support_url": "https://support.shopify.com/"
   },
@@ -83,6 +83,17 @@
         "id": "gradient_background_2",
         "type": "color_background",
         "label": "t:settings_schema.colors.settings.gradient_background_2.label"
+      },
+      {
+        "type": "color",
+        "id": "colors_background_3",
+        "default": "#ff7f7f",
+        "label": "t:settings_schema.colors.settings.colors_background_3.label"
+      },
+      {
+        "id": "gradient_background_3",
+        "type": "color_background",
+        "label": "t:settings_schema.colors.settings.gradient_backgroun3_2.label"
       }
     ]
   },

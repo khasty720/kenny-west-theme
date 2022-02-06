@@ -7,6 +7,7 @@
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#FFFFFF",
     "colors_background_2": "#F3F3F3",
+    "colors_background_3": "#001232", 
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
     "favicon": "shopify:\/\/shop_images\/icon.png",
@@ -71,6 +72,7 @@
       "colors_outline_button_labels": "#121212",
       "colors_background_1": "#FFFFFF",
       "colors_background_2": "#F3F3F3",
+      "colors_background_3": "#001232",
       "type_header_font": "assistant_n4",
       "type_body_font": "assistant_n4",
       "sections": {
@@ -100,6 +102,7 @@
       "colors_outline_button_labels": "#7B8382",
       "colors_background_1": "#EFECEC",
       "colors_background_2": "#C1BCAE",
+      "colors_background_3": "#001232",
       "type_header_font": "americana_n4",
       "type_body_font": "quattrocento_sans_n4",
       "sections": {
